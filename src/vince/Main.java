@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 		String nev = "Vince";
 		String nev2 = "";
@@ -23,7 +23,7 @@ public class Main {
 			nev2 = br.readLine();
 			System.out.println(nev2);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+		
 			e.printStackTrace();
 		}
 		
@@ -35,10 +35,11 @@ public class Main {
 	try {
 		br.close();
 	} catch (IOException e) {
-		// TODO Auto-generated catch block
+		// valami hardveres vagy szoftveres hiba ami miatt nem éri el
 		e.printStackTrace();
 	}	
-		
+		Dolog dologNev = new Dolog("név", 100); // példányosítás, a paraméterek a konstruktor által vannak meghatározva
+		dologNev.kiir();
 	}
 
 }
