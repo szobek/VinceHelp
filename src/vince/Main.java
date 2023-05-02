@@ -40,6 +40,10 @@ public class Main {
 	}	
 		Dolog dologNev = new Dolog("név", 100); // példányosítás, a paraméterek a konstruktor által vannak meghatározva
 		dologNev.kiir();
+		Dolog megegy = new MegEgyDolog("név", 200, 200);// példányosítás, a paraméterek a konstruktor által vannak meghatározva
+		MegEgyDolog harmadik = new MegEgyDolog("név", 300, 300);// példányosítás, a paraméterek a konstruktor által vannak meghatározva
+		harmadik.kiir(); // örökölt publkus metódus
+		megegy.kiir(); // örökölt publkus metódus
 	}
 
 }
